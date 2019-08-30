@@ -3,8 +3,6 @@ shell.prefix("source $HOME/.bashrc; ")
 
 import os
 
-configfile: "config.json"
-
 IDS, = glob_wildcards("mags/{id}.fa")
 
 localrules: protein_ox, add_tax_protein_ox, coding_density, popular, parse_coding_density
@@ -77,13 +75,4 @@ rule add_tax_protein_ox:
 		'''
 
 
-rule diamond_report:
-	input: 
-		tsv='diamond/{id}.diamond.tsv',
-		faa='proteins/{id}.faa'
-	output: 'diamond_report/bin.{id}.tsv', 'diamond_report/con.{id}.tsv'
-	params:
-		outdir="diamond_report"
-	conda: "envs/bioperl.yaml"
-	shell: "scripts/diamond_report.pl {input.tsv} {input.faa} {params.outdir}"
 
