@@ -1,0 +1,7 @@
+name: bioperl
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - perl-bioperl

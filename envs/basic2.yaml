@@ -1,0 +1,14 @@
+name: basic2
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - graphlan=1.0.0
+  - mercurial=4.5
+  - pplacer=1.1.alpha17
+  - fasttree=2.1.10
+  - muscle=3.8.1551
+  - hmmer=3.1b2
+  - python=2.7
+  - scipy

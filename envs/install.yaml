@@ -1,0 +1,10 @@
+name: magpy_install
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - diamond=0.9.22
+  - hmmer=3.1b2
+  - ete3=3.1.1
+  - mercurial

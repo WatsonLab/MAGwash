@@ -1,0 +1,7 @@
+name: pfam_scan
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - pfam_scan=1.6

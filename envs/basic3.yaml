@@ -1,0 +1,10 @@
+name: basic3
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - snakemake=4.8.0
+  - hmmer=3.1b2
+  - pplacer=1.1.alpha19
+  - fasttree=2.1.10
